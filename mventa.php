@@ -133,7 +133,7 @@ echo '</div>';
 		<?php 	
 		
 			$idauto=$_POST['idv'];
-			$sql3 = $db->query("SELECT * FROM subastas WHERE id_vehiculo='$idauto'");
+			$sql3 = $db->query("SELECT * FROM ventad WHERE id_vehiculo='$idauto'");
 			$sql3 = $sql3->fetchAll();
 			foreach($sql3 as $row){
 				$_SESSION["asd"] = $row['id_vehiculo'];
@@ -152,13 +152,7 @@ echo '</div>';
 				$a13=$row['Tdireccion'];
 				$a14=$row['Ttecho'];
 				$a15=$row['Precio'];
-				$a16=$row['Fecha'];
-				$a17=$row['Fechai'];
-				$a18=$row['Estado'];
 				$a19=$row['Pfoto'];
-				$a20=$row['id_comprador'];
-				$a21=$row['id_vendedor'];
-				$a22=$row['precio_mayor'];
 			}
 	?>
 	</div>
@@ -460,14 +454,14 @@ echo '<input type="text" class="form-control" id="direccion" value="'.$a3.'" nam
 					<?php
 					if($a13 == "default"){
 							echo '
-							<option value="default"selected>Tipo De combustible</option>
+							<option value="default"selected>Tipo De direccion</option>
 							<option value="Asistida">Asistida</option>
 							<option value="Hidraulica">Hidraulica</option>
 							<option value="Mecanica">Mecanica</option>';
 					}
 					if($a13 == "Asistida"){
 						echo '
-						<option value="default">Tipo De combustible</option>
+						<option value="default">Tipo De direccion</option>
 						<option value="Asistida"selected>Asistida</option>
 						<option value="Hidraulica">Bencinero</option>
 						<option value="Mecanica">Mecanica</option>';
@@ -475,7 +469,7 @@ echo '<input type="text" class="form-control" id="direccion" value="'.$a3.'" nam
 					}	
 					if($a13 == "Hidraulica"){
 						echo '
-						<option value="default">Tipo De combustible</option>
+						<option value="default">Tipo De direccion</option>
 						<option value="Asistida">Asistida</option>
 						<option value="Hidraulica"selected>Hidraulica</option>
 						<option value="Mecanica">Mecanica</option>';
@@ -483,7 +477,7 @@ echo '<input type="text" class="form-control" id="direccion" value="'.$a3.'" nam
 					}
 					if($a13 == "Mecanica"){
 						echo '
-						<option value="default">Tipo De combustible</option>
+						<option value="default">Tipo De direccion</option>
 						<option value="Asistida">Asistida</option>
 						<option value="Hidraulica">Hidraulica</option>
 						<option value="Mecanica"selected>Mecanica</option>';
@@ -546,18 +540,15 @@ echo '<input type="text" class="form-control" id="direccion" value="'.$a3.'" nam
 	</div>
 	<div class="row">
 		<div class="col-md-6 col-sm-12 form-row">
-			<label for="usr">Precio inicial vehiculo:</label>
+			<label for="usr">Precio vehiculo:</label>
 <?php			echo '<input type="number" class="form-control" id="Precio" name="Precio"	value="'.$a15.'"required>'?>
 		</div>
 		<div class="col-md-6 col-sm-12 form-row">
-			<label for="usr">Fecha para el fin de la subasta :</label>
-			<input type="date" name="fecha_fin" id="fecha_fin" class="form-control" required>
-			<input type="time" name="hora_fin" id="hora_fin" class="form-control" required>
 		</div>
 	</div>
 	<label for="usr">Foto :</label>
 
-<?php			echo '<input type="text" class="form-control" id="foto" name="foto"	value="'.$a19.'"required>'?>
+	<?php			echo '<input type="text" class="form-control" id="foto" name="foto"	value="'.$a19.'"required>'?>
 	<br></br>
 	<button type="submit" class="btn btn-default" name="boton" id="boton">Publicar!</button>
 </div>
@@ -581,14 +572,9 @@ if (isset($_POST['boton']))
 	$Tvehiculo=$_POST['Tvehiculo'];
 	$Precio=$_POST['Precio'];
 	$Modelo=$_POST['Modelo'];
-	$fecha_fin = $_POST["fecha_fin"];//Esto no se insertara en la tabla
-    $hora_fin = $_POST["hora_fin"];
-	$Fecha= "$fecha_fin $hora_fin:00";
 	$fecha_hora_actual = date("Y-m-d H:i:s");
 	$foto=$_POST['foto'];
-	$cantidad=1;
-	$modo=2;
-	$sql3 = "Update subastas set Nombre ='".$_SESSION['nombre_usuario']."', Apellido='".$_SESSION['apellido_usuario']."', Direccion='".$Direccion."',Telefono='$Numero', Email='$Email',Tvehiculo='$Tvehiculo',Marca='$Marca',Modelo='$Modelo',Ano='$Ano',Tcombustible='$Tcombustible',Patente='$Patente',Kilometraje='$Kilometraje',Tdireccion='$Tdireccion',Ttecho='$Ttecho',Precio='$Precio',Fecha='$Fecha',Fechai='$fecha_hora_actual',Pfoto='$foto',id_vendedor='$id_vendedor' WHERE id_vehiculo= '".$_SESSION['asd']."'"; 
+	$sql3 = "Update ventad set Nombre ='".$_SESSION['nombre_usuario']."', Apellido='".$_SESSION['apellido_usuario']."', Direccion='".$Direccion."',Telefono='$Numero', Email='$Email',Tvehiculo='$Tvehiculo',Marca='$Marca',Modelo='$Modelo',Ano='$Ano',Tcombustible='$Tcombustible',Patente='$Patente',Kilometraje='$Kilometraje',Tdireccion='$Tdireccion',Ttecho='$Ttecho',Precio='$Precio',Fechai='$fecha_hora_actual',Pfoto='$foto' WHERE id_vehiculo= '".$_SESSION['asd']."'"; 
                 $sql3 = $db->prepare($sql3);
 				$sql3->execute();
 	echo "<META HTTP-EQUIV='REFRESH' CONTENT='0;URL=index.php'>";

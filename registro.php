@@ -11,6 +11,7 @@
 			}
 			/*]]>*/
 	</style>
+</script> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -128,14 +129,38 @@ echo '</div>';
 	</div>
 </nav>
 <div class="container">
-	<div class="container">
-		<div class="panel panel-default">
-		  <div class="panel-heading" id="ok"> <h3> Historial De Compras</h3></div>
-		  <div class="panel-body">
-			<form>
-			</form>
-		  </div>
-		</div>
+  <h2>Registrate</h2>
+  <br></br>
+  <form action="reg.php" method="post" class="login">
+    <div class="form-group">
+      <label for="usr">Nombres:</label>
+      <input type="text" class="form-control" id="nombre" name="nombre">
+    </div>
+	<div class="form-group">
+      <label for="usr">Apellidos:</label>
+      <input type="text" class="form-control" id="apellido" name="apellido">
+    </div>
+	<div class="form-group">
+      <label for="usr">Rut:</label>
+      <input type="text" class="form-control" placeholder="11.111.111-1" id="rut" name="rut">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Contraseña:</label>
+      <input type="password" class="form-control" id="password" name="password">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Reingrese Contraseña:</label>
+      <input type="password" class="form-control" id="password2" name="password2">
+    </div>
+    <div class="form-group">
+      <label for="email">Correo:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+	<div>
+		<label><input type="checkbox" value="" required>Acepto los<a href="terminosuso.html">Terminos de Uso.</a></label>
+	</div>
+	<div>
+	<button type="submit" class="btn btn-default" name="boton" id="boton">Registrar</button><br></br>
 	</div>
 	</form>
 </div>

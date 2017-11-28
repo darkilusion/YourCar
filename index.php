@@ -59,7 +59,7 @@
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
-			<li><a class="navbar-brand" href="index.php">YourCar</a>
+			<li class="active"><a class="navbar-brand" href="index.php">YourCar</a>
 		</div>
 		<ul class="nav navbar-nav">>
 			<li><a href="ventas.php">Venta Directa</a></li>
@@ -125,21 +125,30 @@ echo '</div>';
 						echo'</ul>';
 			}
 		?>
+
 	</div>
 </nav>
-<div class="container">
-	<div class="container">
-		<div class="panel panel-default">
-		  <div class="panel-heading" id="ok"> <h3> Historial De Compras</h3></div>
-		  <div class="panel-body">
-			<form>
-			</form>
-		  </div>
-		</div>
-	</div>
-	</form>
-</div>
-
+	<!---  CUERPO MAN !--->
+	<br>
+	  <div class="container marketing">
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="subasta.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Subastas </h2>
+          <br></br>
+          <p><a class="btn btn-default" href="contacto.html" role="button">Subastas &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="pensando.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>¿Quienes somos?</h2>
+          <br></br>
+          <p><a class="btn btn-default" href="info.php" role="button">Información! &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+	 </div>
 </body>
 <hr></hr>
 <div class="container">
@@ -149,6 +158,8 @@ echo '</div>';
             </ul>
 	</div>
 </div>
+
+
 <script>
 $(document).ready(function(){
     $("#myBtn").click(function(){

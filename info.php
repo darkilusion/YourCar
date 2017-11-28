@@ -19,7 +19,7 @@
 	<!div class="page-header" id="cap"!>
 		<!img src="yourcar-logo.png" class="img-rounded" alt="Cinque Terre" width="300" height="100"!>
 	<!/div!>
-	<div class="banner text-center">
+  <div class="banner text-center">
 	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
@@ -56,7 +56,7 @@
 	</div>
 </head>
 <body>
-	<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
 			<li><a class="navbar-brand" href="index.php">YourCar</a>
@@ -75,7 +75,7 @@
 				echo '<span class="caret"></span></a>';
 				echo '<ul class="dropdown-menu">';
 					echo '<li><a href="agree.php">Vender vehiculo.</a></li>';
-					echo '<li><a href="asubasta.php">Subastar vehiculo.</a></li>';
+					echo '<li><a href="asubasta.php">Subastar vehico.</a></li>';
 					echo '<li><a href="vensu.php">Articulos en venta/subasta.</a></li>';
 					echo '<li><a href="historialcompra.php">Historial de compra/venta .</a></li>';
 				echo '<li class="divider"></li>';
@@ -128,16 +128,38 @@ echo '</div>';
 	</div>
 </nav>
 <div class="container">
-	<div class="container">
 		<div class="panel panel-default">
-		  <div class="panel-heading" id="ok"> <h3> Historial De Compras</h3></div>
-		  <div class="panel-body">
-			<form>
-			</form>
+		  <div class="panel-heading" id="ok"> <h3>¿Quienes Somos? </h3></div>
+		  <div class="panel-body" id="oka">
+				<div class="page-content default-pagetemp">
+		<div class="container post-wrap">
+			<div class="row-fluid">
+				<div id="content" class="span8">
+					<div class="post clearfix" id="post-53">
+						<div class="skepost">
+							<h4><strong>INFORMACIÓN</strong></h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut scelerisque turpis. Maecenas arcu ante, malesuada a pharetra vel, placerat ut sapien. Mauris nec felis lacinia, rhoncus massa quis, dictum lectus. Sed euismod nisi in vehicula sodales. Integer sit amet eleifend dolor. Nullam efficitur risus sed mauris sollicitudin ultrices. Proin mauris arcu, luctus ac turpis a, tincidunt placerat arcu. Phasellus venenatis consectetur hendrerit. Maecenas pulvinar eros sit amet lectus pellentesque, at maximus nibh ornare. Sed pharetra volutpat felis, quis cursus lorem mattis quis.
+
+Phasellus id diam non dolor rutrum pretium. Quisque id posuere tortor. Morbi sodales diam dolor, ac ultricies felis maximus nec. In ipsum justo, vulputate non congue ut, pharetra non sem. Morbi neque est, congue nec vestibulum sit amet, rutrum et libero. Nulla vehicula faucibus consequat. Mauris in mi metus. Curabitur feugiat hendrerit justo, non volutpat lectus aliquet quis. Integer sed justo id ipsum lobortis tristique quis at orci. Sed pharetra, arcu quis dictum tincidunt, lectus tellus bibendum mi, nec malesuada tellus erat et tellus. Duis leo augue, dignissim ac euismod sit amet, vehicula quis felis. Vivamus quis venenatis nibh. Integer pulvinar iaculis orci, quis imperdiet metus congue sit amet.
+
+Etiam consequat tincidunt augue eget consequat. Aenean vestibulum elit ut quam pulvinar, sed venenatis libero interdum. Aliquam in mauris ut erat vehicula posuere eu vitae sem. Donec ultrices efficitur libero ut venenatis. Sed urna ipsum, fringilla eget nunc eget, congue rhoncus urna. Curabitur nisl purus, fermentum eu neque at, fermentum imperdiet eros. Nulla ut metus ut risus viverra luctus vel non est. Praesent sagittis magna et elit lacinia, a suscipit tellus lobortis. Quisque a ornare neque. In non pulvinar tellus, eu eleifend enim. Ut dignissim turpis non posuere tempus. Curabitur tincidunt pulvinar leo tristique posuere. Nulla id sapien euismod, suscipit tortor eu, mollis tortor.
+
+Donec blandit, quam at commodo mattis, lectus mauris egestas ligula, eget porta ante justo in mi. Vivamus porttitor lobortis tincidunt. Pellentesque massa risus, faucibus ac dolor ut, congue fringilla dolor. Praesent vehicula odio ac est rutrum, id pharetra enim aliquet. Maecenas eu tellus ac dui lacinia tempor. Nullam bibendum eros lorem, a mollis tortor suscipit sit amet. Nulla tincidunt nisi eu purus rhoncus placerat. Vivamus ut augue nec odio mollis maximus. Vivamus tincidunt lectus id lorem fermentum, vehicula semper arcu vulputate. Vestibulum congue mattis pulvinar. Morbi blandit feugiat arcu, quis ornare arcu hendrerit et. Morbi hendrerit neque risus, eu maximus mauris dignissim eget. Morbi vitae urna sollicitudin, mollis massa at, congue justo. Phasellus dapibus leo neque, sed egestas velit congue vel. Aenean sit amet nibh vitae diam rhoncus vehicula sit amet quis dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+Ut venenatis interdum augue, id imperdiet magna dapibus eu. Phasellus vel porta nibh. Etiam varius elit venenatis mauris egestas, sed iaculis ligula lobortis. Praesent mauris leo, gravida ac ante nec, aliquam viverra justo. Donec ut nisl quis dui dapibus tincidunt non ut sapien. Ut tempor arcu a est sagittis tristique. Fusce sodales tortor mi, accumsan euismod ex imperdiet eget. Praesent vel leo ut lectus lacinia aliquam quis aliquam enim. Praesent sem metus, vulputate quis sapien nec, bibendum lacinia sem. Nam tincidunt augue et mi tincidunt, nec vehicula velit iaculis. Ut a convallis justo. Phasellus suscipit nulla vel orci imperdiet varius.</p>
+			<address><br /> Puedes contactarnos!<br>
+			Diego Portales 555,Temuco,Chile<br />
+			Numero:+569 56815288<br />
+			Email:contacto@yourcar.com<br />
+			</address>
 		  </div>
 		</div>
 	</div>
-	</form>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 </body>
